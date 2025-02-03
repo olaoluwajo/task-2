@@ -39,7 +39,7 @@ const gameState = {
 
 const elements = {
 	colorBox: document.querySelector('[data-testid="colorBox"]'),
-	colorOptions: document.querySelector(".color-options"),
+	colorOptions: document.querySelector('[data-testid="colorOption"]'),
 	score: document.querySelector('[data-testid="score"]'),
 	newGameBtn: document.querySelector('[data-testid="newGameButton"]'),
 	shuffleBtn: document.querySelector('[data-testid="shuffleButton"]'),
