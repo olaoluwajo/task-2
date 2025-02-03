@@ -119,7 +119,21 @@ function startNewGame() {
 	createColorOptions();
 }
 
-elements.newGameBtn.addEventListener("click", startNewGame);
+function startFreshGame() {
+	gameState.score = 0;
+	elements.score.textContent = `Score: ${gameState.score}`;
+
+	gameState.options = getRandomColors(6);
+	gameState.targetColor =
+		gameState.options[Math.floor(Math.random() * gameState.options.length)];
+
+	elements.colorBox.style.backgroundColor = gameState.targetColor;
+	elements.gameStatus.className = "game-status";
+
+	createColorOptions();
+}
+
+elements.newGameBtn.addEventListener("click", startFreshGame);
 elements.shuffleBtn.addEventListener("click", shuffleColors);
 
 startNewGame();
