@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Color Guessing Game</title>
+		<link rel="stylesheet" href="/css/styles.css" />
+	</head>
+	<body>
+		<div class="game-container">
+			<h1>Color Guessing Game😎</h1>
+
+			<div data-testid="gameInstructions" class="game-instructions">
+				Can you guess which color matches the box below?
+			</div>
+
+			<div class="header">
+				<div data-testid="score" class="score">Score: 0</div>
+				<div class="button-container">
+					<button data-testid="newGameButton" class="new-game-btn">
+						New Game
+					</button>
+				</div>
+			</div>
+
+			<div data-testid="colorBox" class="color-box"></div>
+
+			<div class="color-contain">
+				<div data-testid="gameStatus" class="game-status"></div>
+				<button
+					data-testid="shuffleButton"
+					class="shuffle-btn"
+					title="Shuffle Colors"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					>
+						<path d="M21 3v6h-6" />
+						<path d="M3 21v-6h6" />
+						<path d="M3.51 9a9 9 0 0114.67-4.36L21 3" />
+						<path d="M20.49 15a9 9 0 01-14.67 4.36L3 21" />
+					</svg>
+				</button>
+			</div>
+
+			<div class="color-options"></div>
+		</div>
+		<script src="/js/script.js"></script>
+	</body>
+</html>
